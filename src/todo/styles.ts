@@ -1,18 +1,20 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  headerContainer: {
-    paddingLeft: 40,
-    paddingRight: 40,
-    paddingTop: 100,
+  container: {
+    paddingTop: 70,
+    paddingBottom: 200,
+    paddingLeft: 60,
+    paddingRight: 60,
+  },
+  header: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    firstText: { fontSize: 40, color: "#5F7EA4" },
-    secondText: { fontSize: 40, color: "#32527B" },
+    to: { marginLeft: 5, fontSize: 40, color: "#5F7EA4" },
+    do: { fontSize: 40, color: "#32527B" },
   },
-  addTaskContainer: {
-    marginTop: 10,
+  addTask: {
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
@@ -31,20 +33,18 @@ export const styles = StyleSheet.create({
       backgroundColor: "#053DA1",
     },
   },
-  summaryContainer: {
-    marginTop: 40,
-    paddingHorizontal: 60,
+  summary: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     created: {
       fontSize: 20,
-      fontWeight: 'bold',
+      fontWeight: "bold",
       color: "#5F7EA4",
     },
     done: {
       fontSize: 20,
-      fontWeight: 'bold',
+      fontWeight: "bold",
       color: "#32527B",
     }
   },
