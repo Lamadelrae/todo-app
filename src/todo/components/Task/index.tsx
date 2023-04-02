@@ -7,7 +7,6 @@ import { FontAwesome } from "@expo/vector-icons";
 export function Task({ text, isDone }: { text: string; isDone: boolean }) {
   return (
     <View style={styles.task}>
-      
       {isDone ? (
         <FontAwesome name="check-circle" size={24} color="black" />
       ) : (
@@ -15,7 +14,11 @@ export function Task({ text, isDone }: { text: string; isDone: boolean }) {
       )}
 
       <View style={styles.textBox}>
-        <Text>{text}</Text>
+        {isDone ? (
+          <Text style={{ textDecorationLine: "line-through" }}>{text}</Text>
+        ) : (
+          <Text>{text}</Text>
+        )}
       </View>
 
       <FontAwesome5 name="trash" size={24} color="black" />
